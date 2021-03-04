@@ -4,7 +4,7 @@ int led=0;
 Serial serial;
 
 void setup() {
-  serial=new Serial (this, Serial.list()[0], 9600); //define el objeto serial como puerto serie
+  serial=new Serial (this, Serial.list()[32], 9600); //define el objeto serial como puerto serie
   size (500, 400); 
   //dibuja los botones
   fill (255, 0, 0);

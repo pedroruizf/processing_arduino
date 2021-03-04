@@ -3,7 +3,8 @@ void setup() {
 }
 
 void loop() {
-  int luz = analogRead (A1);
+  int luz = analogRead (A1) / 4;
+  //Serial.println(luz);
   Serial.write (luz);
-  delay (100);
+  delay (1000);
 }

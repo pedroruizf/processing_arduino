@@ -1,6 +1,6 @@
 void setup() {
   Serial.begin (9600);
-  pinMode (3, OUTPUT);
+  pinMode (13, OUTPUT);
 
 }
 
@@ -9,13 +9,13 @@ void loop() {
     int dato = Serial.read();//si llega lo guarda en la variable dato
 
     if (dato == 0) {//si dato vale 0 apaga el led
-      digitalWrite (3, LOW);
+      digitalWrite (13, LOW);
 
     }
 
     if (dato == 1) {//si dato vale 1 enciende el led
 
-      digitalWrite (3, HIGH);
+      digitalWrite (13, HIGH);
     }
   }
 
